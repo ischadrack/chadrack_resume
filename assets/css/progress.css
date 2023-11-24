@@ -1,0 +1,47 @@
+.progress-title h3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-title h3 i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.progress {
+  height: 5px;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: visible;
+  position: relative;
+}
+
+.progress .progress-bar {
+  border-radius: 20px;
+  animation: animate-positive 2s;
+}
+
+.progress .progress-value {
+  width: 40px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 15px;
+  border-radius: 0 15px 15px 0;
+  border-top: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  color: #1678d4;
+  padding: 0 5px;
+}
+
+@keyframes animate-positive {
+  0% {
+    width: 0;
+  }
+}

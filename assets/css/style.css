@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font: 'poppins', sans-serif;
     color: #fff;
 }
 
 body {
     columns: #ededed;
-    background: #000;
+    background: #000000;
+    align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -26,6 +29,7 @@ body {
 
 .logo {
     position: relative;
+    margin-left: 15%;
     font-size: 25px;
     color: #fff;
     text-decoration: none;
@@ -152,19 +156,15 @@ body {
         0 0 100px cyan, 0 0 200px cyan
 }
 
-/* .about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    padding-bottom: 6rem;
-} */
+/*  */
 .about{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .about-img{
     padding-bottom: 20%;
@@ -172,6 +172,7 @@ body {
     height: auto;
     width: 100%;
     border-radius: 8px;
+    margin-top: 10%;
 }
 .about-text h2{
     font-size: 60px;
@@ -184,7 +185,6 @@ body {
     font-weight: 600;
     color: #fff;
     line-height: 1.7;
-    margin: 15px 0 30px;
 }
 .about-text p{
     color: aliceblue;
@@ -196,8 +196,11 @@ body {
 #services{
     color: aliceblue;
     font-size: 20px;
+    width: 100%;
     line-height: 1.4;
     margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
 }
 .sub-tittle{
     text-align: center;
@@ -205,15 +208,35 @@ body {
     padding-bottom: 70px;
 }
 
-.container{
-    padding: 90px;
-}
+/* .container0{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
 .services-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, mimax(259px, 1fr));
-    grid-gap:40px;
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+
 }
+@media (min-width: 768px) {
+    .services-list {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-list {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
 .services-list div{
     background-color: transparent;
     padding: 40px;
@@ -223,7 +246,7 @@ body {
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
     box-shadow: 1px 1px #012290f7,
-                1px 1px 40px #012290f7
+                1px 1px 40px #141f43f7
 }
 .services-list div i{
     font-size: 50px;
@@ -258,16 +281,149 @@ body {
     0 0 25px rgb(9, 5, 235);
     
 }
-
+span{
+    color: #0ef;
+}
 .read:hover {
     box-shadow: 0 0 5px cyan,
         0 0 25px cyan, 0 0 25px cyan,
         0 0 10px cyan, 0 0 20px cyan
 }
+.services-list div:hover{
+    transform: translatey(-10px);
+}
+
+section{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+
+.radial-bars{
+    width: 30%;
+    display: inline-table;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+.technical_skills .progress-title:hover > div:hover h3 i {
+    transform: scale(1.25);
+  }
+.radial-bars .radial-bar{
+   width: 100%;
+   height: 170px;
+   margin-bottom: 10px;
+   position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    fill: #0ef;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: #0519f5;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: rgba(244, 248, 6, 0.881);
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+.path-5{animation: animate-path5 1s 1s linear forwards;}
+.path-6{animation: animate-path6 1s 1s linear forwards;}
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;;
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 175;;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 125;;
+    }
+}
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 75;;
+    }
+}
+@keyframes animate-path5{
+    100%{
+        stroke-dashoffset: 122;;
+    }
+}
+@keyframes animate-path6{
+    100%{
+        stroke-dashoffset: 177;;
+    }
+}
+
+
+.radial-bars .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+.radial-bars .radial-bar .text{
+        position: absolute;
+        width: 10rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -150%);
+        text-align: justify;
+    }
 
 
 
 
+
+
+
+/* 
+
+
+
+} */
+
+
+/* css progre */
 
 
 
@@ -275,7 +431,7 @@ body {
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
-        opacity: 0;
+        opacity: 1;
     }
 
     100% {
@@ -318,4 +474,267 @@ body {
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+.card{
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+}
+.card .rating{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card .rating .block{
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+    left: 50%;
+    transform-origin: 50% 100px;
+    opacity: 0;
+    animation: animate 0.1s linear forwards;
+}
+@keyframes animate{
+    to{
+        opacity: 1;
+    }
+}
+.card .rating .block:nth-child(-n+75){
+    background: #0f0;
+    box-shadow: 0 0 15px #0f0, 0 0 30px #0f0;
+}
+.card .rating h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5em;
+}
+.card .rating h2 span{
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.card .rating h2 sup {
+    font-size: 1.2em;
+
+}
+
+
+
+
+/* portfolio */
+.main-text{
+    padding: 130px;
+}
+.main-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+.main-text h2 span{
+    color: #0ef;
+}
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0,1), #0ef);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h5{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.layer p{
+    color: wheat;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.layer i{
+    color: red;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #081b29;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+}
+
+
+/* contact form */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding: 30px;
+}
+.contact-text h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h2 span{
+    color: #0ef;
+}
+.contact-text h4{
+    margin: 15px 0;
+    color: #0f0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 600;
+    transition: all .50s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.01) translate(-5px);
+    color: #0519f5;
+}
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--1));
+}
+.contact-icons i:hover{
+    background: #0519f5;
+    color: #fff;
+    box-shadow: 0 0 20px #0ef;
+}
+.contact-form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: white;
+    color: rgb(4, 4, 4);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    width: 20%;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #001b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px rgb(9, 5, 235);
+}
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 25px yellow,
+        0 0 10px rgb(7, 7, 7), 0 0 20px cyan
+}
+
+/* up btn */
+.last-text{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 300;
+    margin-top: 70px;
+}
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+.top i {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 0.5rem;
+
+}
+.bxs-chevrons-up:hover{
+    font-size: 2rem;
 }
