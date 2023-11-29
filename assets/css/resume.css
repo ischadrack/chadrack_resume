@@ -88,6 +88,7 @@ li {
   width: 100%;
   padding: 30px;
 }
+
 .container .row   .technical_skills:hover > div {
   transition-duration: 0.5s;
 }
@@ -230,16 +231,7 @@ li {
   position: absolute;
 }
 
-.resume .func .work ul li::before,
-.resume .func .edu ul li::before {
-  width: 7px;
-  height: 7px;
-  border: 3px solid #ffffff;
-  background: #ffb300;
-  border-radius: 50%;
-  left: 3px;
-  z-index: 1;
-}
+
 
 .resume .func .work ul li::after,
 .resume .func .edu ul li::after {
@@ -259,9 +251,8 @@ li {
 .resume {
   width: 100%;
   color: #ffffff;
-  position: relative;
-  display: flex;
-}
+  display: flex; 
+}  
 
 
 .resume .base,
@@ -578,4 +569,40 @@ li {
 
 .resume .func .interests-items div span {
   display: block;
+}
+
+/* Limiter la largeur de la page à 1200px */
+
+.resume {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Utiliser des flexbox pour organiser les éléments de la page */
+
+.resume .base {
+  display: inline-block;
+  flex-direction:column;
+}
+
+.resume .func {
+  display: inline-block;
+  flex-direction: row;
+}
+
+/* Utiliser des media queries pour définir des styles spécifiques pour différentes tailles d'écran */
+
+@media (max-width: 768px) {
+  .resume {
+    width: 100%;
+    display: flex;
+  }
+
+  .resume .base {
+    width: 100%;
+  }
+ 
+  .resume .func {
+    width: 100%;
+  }
 }
