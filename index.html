@@ -598,7 +598,7 @@
           </symbol>
         </svg>
 
-        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle" id="dropdown">
           <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
                   id="bd-theme"
                   type="button"
@@ -632,6 +632,38 @@
             </li>
           </ul>
         </div>
+        <style>
+                #dropdown {
+                  position: fixed;
+                  top: 10%;
+                  left: 0;
+                }
+                .dropdown-toggle {
+                border: none;
+                box-shadow: none;
+              }
+
+              .dropdown-menu {
+                border: 1px solid #e9ecef;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+              }
+
+              .dropdown-item {
+                padding: 0.5rem 1rem;
+              }
+
+              .dropdown-item:hover {
+                background-color: #165fa729;
+              }
+
+              .theme-icon {
+                width: 16px;
+                height: 16px;
+                fill: #212529;
+              }
+
+
+        </style>
 
          <!-- FOOTER SECTION START -->
           <footer class="footer-area">
