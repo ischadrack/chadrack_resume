@@ -214,9 +214,7 @@ a{
       0 0 100px cyan, 0 0 200px cyan
 }
 
-.home{
-  background-color: transparent;
-}
+
 /*  */
 .about{
   display: flex;
@@ -1311,7 +1309,9 @@ span{
   }
 }
 
+/*  */
 
+/*  */
 
 .row #links .follow .box {
   text-align: center;
@@ -1349,6 +1349,8 @@ span{
 .row #links .follow .box i.fa::before {
   display: block;
 }
+
+
 
 /* ----- FOOTER SECTION ----- */
     

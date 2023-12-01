@@ -22,12 +22,33 @@
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-row">  
-    
+    <header>
+      <div class="bg_logo">
+        <img src="assets/images/media/bubble-39.png" alt="">
+      </div>
+      <style>
+        .bg_logo {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          max-width: 500px;
+          z-index: 100; 
+          position: fixed;              
+              }
+        .bg_logo img{
+          max-width: 60%;
+        }
+        a{
+          text-decoration: none;
+        }
+      </style>
+    </header>
 <main> 
   <div class="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-none" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">IS <span>Chadrack</span></a>
+        <a class="navbar-brand" style="margin-left: -5%;" href="#">I'm <span>Chadrack</span></a>
           <!-- <img src="assets/images/media/bubble-39.png" alt="">        -->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -77,10 +98,10 @@
  
     <!-- Example Code -->
     
-    <div class="container text-justify">
-      <div class="row">
+    <div class="container text-justify" style="background: url(assets/images/media/shape4/circle-1.png); background-repeat: no-repeat;">
+      <div class="row" style="background: url(assets/images/media/shape6/line-5.png);background-repeat: no-repeat;">
         <div class="col-md-8" id="home home" style="background-color: transparent; border: 0px;">
-          <section class="home">
+          <section class="home" id="acceuil">
             <div class="home-content">
                 <h3>Hello, it's me</h3>
                 <h1>Chadrack BYAMUNGU</h1>
@@ -99,7 +120,7 @@
             </section>
         </div>
         <div class="col-md-4" id="home">
-          <img src="assets/images/Illustration_2.svg" alt="img">
+          <img src="assets/images/media/footer/banner-thumb-6.png" alt="img">
         </div>
         <!-- <div class="col">Column</div>
         <div class="col">Column</div> -->
@@ -545,6 +566,24 @@
               </div>
             </div>
           </div>
+
+
+          <div class="input-group">
+           <h2 align="center">Our NewsLetter <br>
+                <small>           
+                    <p><small>Recevez des mises à jour sur mon travail et mes opportunités</small></p>
+                </small>
+            </h2>
+            <div class="news">
+            </div>
+          </div> 
+
+          <div class="input-group" style="width: 50%;">
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text"><i class='bx bx-send bx-flashing bx-rotate-200' style='color:#357b6b' ></i></span>
+            <span class="input-group-text" type="email"><a href="mailto:ischadrack2@gmail.com">Subscribe</a></span>
+          </div>       
+          
           <div class="container text-justify">
             <div class="row">
               <div class="col-md-4" id="links"  style="background-color: transparent; border: 0px;">
@@ -553,14 +592,13 @@
                     <div class="logo" style="width: 30%; margin-top: -10%;">
                       <img src="assets/images/logo/logo.png" alt="">
                     </div>
-                    <p>I am an experienced full stack developer with a passion for digital. I have strong web development and data analysis skills, and I'm always looking for new ways to use technology to solve problems and improve business life.</P> 
-                      <ul>
-                        <li>
-                          <!-- front-end <br>
-                          Backend <br>
-                          Full Stack -->
-                        </li>
-                      </ul>
+                    <p>Find me on social media to learn more about my work, projects and opportunities. I regularly share updates about my projects, web development articles, and job opportunities.</P> 
+                  </div>
+                  <div class="links">
+                    <i class='bx bxl-github' style='color:#357b6b'></i>
+                    <i class='bx bxl-facebook-circle' style='color:#357b6b' ></i>
+                    <i class='bx bxl-instagram' style='color:#357b6b' ></i>
+                    <i class='bx bxl-tiktok' style='color:#357b6b' ></i>
                   </div>
               </div>
 
