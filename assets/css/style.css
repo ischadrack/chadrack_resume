@@ -213,8 +213,23 @@ a{
       0 0 25px cyan, 0 0 50px cyan,
       0 0 100px cyan, 0 0 200px cyan
 }
+#logo a {
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 30vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #ffffff;
+  border-bottom-right-radius: 70%;
 
-
+  
+}
+#logo a img{
+  width: 100%;
+  margin-left: -1rem;
+}
 /*  */
 .about{
   display: flex;

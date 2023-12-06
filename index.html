@@ -22,35 +22,19 @@
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-row">  
-    <header>
-      <div class="bg_logo">
-        <img src="assets/images/media/bubble-39.png" alt="">
-      </div>
-      <style>
-        .bg_logo {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          max-width: 500px;
-          z-index: 100; 
-          position: fixed;              
-              }
-        .bg_logo img{
-          max-width: 60%;
-        }
-        a{
-          text-decoration: none;
-        }
-      </style>
-    </header>
+    
 <main> 
+ 
   <div class="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-none" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
-        <a class="navbar-brand" style="margin-left: -10%; margin-top: -2%;" href="#"><i class='bx bxl-jquery'style="font-size: 3rem; color:auto"></i><span>Elite</span><br>Numérique</a>
-          <!-- <img src="assets/images/media/bubble-39.png" alt="">        -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+
+        <header id="logo">
+          <a class="navbar-brand" href="#"><span>
+            <img align="center" src="assets/images/logo/logoo.png" alt=""></span></a>
+        </header>
+
+        <button style="background-color: #0c0c0c; box-shadow: 0 0 5px rgb(233, 15, 33),0 0 25px rgb(9, 171, 168), 0 0 50px cyan, 0 0 100px rgb(245, 6, 18), 0 0 200px cyan;"  class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
@@ -76,7 +60,7 @@
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#Interests">Interests</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -392,7 +376,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="interests">
+              <div class="interests" id="Interests">
                 <h3><i class="fas fa-star"></i>Interests</h3>
                 <div class="interests-items">
                   <div class="art"><i class="bx bx-palette"></i><span>Art</span></div>
@@ -409,7 +393,13 @@
         <div class="col">Column</div> -->
       </div>
     </div>
-  
+
+    <hr>
+    <div class="skill" id="skills">
+        <div class="col-md-8" style="background-color: transparent; border: 0px;">
+          <h1 align="center"><span>My</span> Skills</h1>
+        </div>
+    </div>
 
           <div class="container text-justify">
             <div class="row">
